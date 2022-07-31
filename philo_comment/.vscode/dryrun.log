@@ -1,0 +1,8 @@
+make --dry-run --always-make --keep-going --print-directory
+make: Entering directory `/Users/fatmaozturk/Desktop/philo_comment'
+gcc -Wall -Werror -Wextra -pthread -c philo.c -o philo.o
+gcc -Wall -Werror -Wextra -pthread -c dinner.c -o dinner.o
+gcc -Wall -Werror -Wextra -pthread -c utils.c -o utils.o
+gcc -Wall -Werror -Wextra -pthread philo.o dinner.o utils.o -o philo
+make: Leaving directory `/Users/fatmaozturk/Desktop/philo_comment'
+ 
