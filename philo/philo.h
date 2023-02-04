@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   philo.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: faozturk <faozturk@42kocaeli.tr>           +#+  +:+       +#+        */
+/*   By: faozturk <faozturk@student.42kocaeli.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/27 10:51:01 by faozturk          #+#    #+#             */
-/*   Updated: 2022/07/27 10:51:06 by faozturk         ###   ########.tr       */
+/*   Updated: 2023/02/04 13:36:01 by faozturk         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,7 +48,7 @@ typedef struct s_philo
 void	init_data(t_data *data, int ac, char **av);
 t_philo	*init_philo(t_data *data);
 //utils
-void	check_args(t_data *data, int ac);
+void	check_args(t_data *data);
 void	print(t_philo *philo, char *state);
 long	get_time(void);
 int		check_meals(t_philo *philo);

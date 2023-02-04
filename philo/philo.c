@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   philo.c                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: faozturk <faozturk@42kocaeli.tr>           +#+  +:+       +#+        */
+/*   By: faozturk <faozturk@student.42kocaeli.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/25 10:45:46 by faozturk          #+#    #+#             */
-/*   Updated: 2022/07/25 10:46:00 by faozturk         ###   ########.tr       */
+/*   Updated: 2023/02/04 13:37:47 by faozturk         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -59,9 +59,14 @@ int	main(int ac, char **av)
 {
 	t_data	data;
 	t_philo	*philo;
-
+	
+	if (ac != 5 && ac != 6)
+	{
+		printf("Error: Incorrect count of argument.\n");
+		exit(1);
+	}
 	init_data(&data, ac, av);
-	check_args(&data, ac);
+	check_args(&data);
 	philo = init_philo(&data);
 	start_dinner(philo);
 	fin_dinner(philo, &data);

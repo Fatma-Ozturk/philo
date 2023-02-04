@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   utils.c                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: faozturk <faozturk@42kocaeli.tr>           +#+  +:+       +#+        */
+/*   By: faozturk <faozturk@student.42kocaeli.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/25 10:46:12 by faozturk          #+#    #+#             */
-/*   Updated: 2022/07/25 10:46:18 by faozturk         ###   ########.tr       */
+/*   Updated: 2023/02/04 13:37:02 by faozturk         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -59,13 +59,8 @@ long	get_time(void)
 	return ((time.tv_sec * 1000) + (time.tv_usec / 1000));		// tv_sec->seconds	tv_usec->microseconds
 }																//(second*1000=milisaniye) + (microsecond/1000=milisaniye) //süreyi milisaniyeye çeviriyoruz
 
-void	check_args(t_data *data, int ac)
+void	check_args(t_data *data)
 {
-	if (ac != 5 && ac != 6)
-	{
-		printf("Error: Incorrect count of argument.\n");
-		exit(1);
-	}
 	if (data->num_philo < 1 || data->num_philo > 200 || data->t_die < 0 || \
 		data->t_eat < 0 || data->t_sleep < 0)
 	{
