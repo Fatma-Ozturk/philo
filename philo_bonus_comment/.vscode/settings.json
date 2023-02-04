@@ -1,9 +1,0 @@
-{
-	"makefile.extensionOutputFolder": "./.vscode",
-	"files.associations": {
-		"__config": "c",
-		"__threading_support": "c",
-		"atomic": "c",
-		"mutex": "c"
-	}
-}
